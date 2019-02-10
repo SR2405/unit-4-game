@@ -16,38 +16,62 @@
 </head>
 <body>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" style="background-color: pink; margin: auto">
 
-    <h1>Crystal Collector!</h1>
-    <p>Instructions:
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam et officia recusandae omnis repellendus explicabo amet expedita, delectus reiciendis officiis voluptatum nesciunt excepturi veniam aut culpa libero vero sit.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod eligendi reprehenderit. Iste laudantium reprehenderit necessitatibus quae consequatur autem, excepturi at est omnis eveniet provident. Ea pariatur nobis cupiditate ullam!
+    <h1 class="glow">Crystal Collector!</h1>
+    <h3>Instructions:</h3>
+        <ul>
+          <li>There are four crystals displayed below.
+            </li>  
+            <li>
+                    You will see a random number at the start of the game.
+            </li>    
+<li>   
+            
+            When you click on a crystal, it will add a specific amount of points to the your total score at the bottom.
+</li>   
+   
+    
+          <li>  
+           You win if your total score matches the random number from the beginning of the game.
+            
+        </li>
+        <li>
 
-    </p>
+                You loses if your score goes above the random number.
+
+        </li>   
+   
+            
+        <li>   
+ 
+            The game restarts whenever the player wins or loses.
+   </li>
+        </ul>        
     <div > 
             <span class="randomNumber"></span> </br>
          </div>
+
     <div id= "score">
         <h3 class="hidden"></h3>
         Wins: <span class="wins">0</span> </br>
         Losses: <span class="losses">0</span> 
     </div>
+
     <div class="buttons">       
             <img class="image1" id="image1" src="assets/images/crystal1.png">
             <img class="image2" id="image2" src="assets/images/crystal2.png">
             <img class="image3" id="image3" src="assets/images/crystal3.png">
             <img class="image4" id="image4" src="assets/images/crystal4.png">
         </div>
-        <div>
-  <p style="color:#ffffff; background-color:aqua"> Your current Score is: 
+        <div class="score-wrap">
+            <div>
+    Your current Score is: 
             
-            </p>
-        </div>
-        <div>
-                <p style="color:#ffffff; background-color:aqua">
+  </br>
                         <span class="currentScore">0</span> 
 
-                </p>
+                </div>
 
             </div>
 

@@ -21,7 +21,7 @@ currentScore = 0;
 function StartAndreset(){
     currentScore = 0;
 
-    $(".hidden").html("");
+    // $(".hidden").html("");
 
 
 randomNumber = Math.floor(Math.random() * 101) + 19;
@@ -124,8 +124,10 @@ function Win(){
         currentScore = 0;
         $(".currentScore").html(0);
 
-        StartAndreset();
-
+        setTimeout(function() {
+            $(".hidden").html("");
+        }, 2500);
+        StartAndreset()
     }
 } 
     
@@ -142,9 +144,17 @@ function Win(){
             losses++;
             $(".losses").html(losses);
             $(".currentScore").html(0);
-            StartAndreset();
+            // StartAndreset();
+            // var userRes = confirm("Play another Game?");
+            // if (userRes) {
+            //     StartAndreset();
+            // }
+            setTimeout(function() {
+                $(".hidden").html("");
+            }, 2500);
+            StartAndreset()
 
 
 
-console.log(Lost);        }
+        }
     } 
